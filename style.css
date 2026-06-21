@@ -1,0 +1,147 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(rgba(40, 48, 45, 0.95), rgba(20, 25, 23, 0.98)), url('arkaplan.jpg');
+    background-color: #242927;
+    margin: 0;
+    padding: 0;
+    color: #EDE9E6;
+}
+
+nav {
+    background-color: #2b3a35;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    position: relative; /* Menünün katman olarak konumlanmasını sağlar */
+    z-index: 999;       /* Sayfadaki diğer her şeyin (yazıların, butonların) önünde olmasını sağlar */
+}
+
+
+nav a {
+    color: #EDE9E6; 
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #C9996B; 
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: rgba(36, 41, 39, 0.98);
+    padding: 20px;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.5);
+    border-radius: 12px;
+    border-top: 5px solid #9A7049; 
+}
+
+h1, h2, h3 {
+    color: #9eb5ae; 
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
+    border: 1px solid #5c4e43;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table, th, td {
+    border-bottom: 1px solid #5c4e43; 
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+td:not(:last-child), th:not(:last-child) {
+    border-right: 1px solid #5c4e43;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #2b3a35;
+    color: #EDE9E6;
+}
+
+tr {
+    background-color: #2d3331;
+    color: #EDE9E6;
+}
+
+tr:nth-child(even) {
+    background-color: #423934;
+    color: #EDE9E6;
+}
+
+.btn {
+    padding: 8px 14px;
+    text-decoration: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-delete { background-color: #7a2d2d; }
+.btn-delete:hover { background-color: #541e1e; }
+
+.btn-edit { background-color: #9A7049; color: white; }
+.btn-edit:hover { background-color: #735132; }
+
+.btn-add { background-color: #3B514A; color: #EDE9E6; margin-bottom: 15px; }
+.btn-add:hover { background-color: #273631; }
+
+form { margin-top: 20px; }
+.form-group { margin-bottom: 15px; }
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #EDE9E6;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #5c4e43;
+    border-radius: 6px;
+    background-color: #2d3331;
+    color: #EDE9E6;
+}
+
+.form-group input:focus, .form-group select:focus {
+    outline: none;
+    border-color: #3B514A;
+    box-shadow: 0 0 6px rgba(92, 118, 109, 0.5);
+}
+
+button[type="submit"] {
+    background-color: #3B514A;
+    color: #EDE9E6;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover { background-color: #273631; }
